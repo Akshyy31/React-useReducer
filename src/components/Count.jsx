@@ -1,4 +1,5 @@
-import React, { useEffect, useReducer } from "react";
+import React, {useReducer } from "react";
+// import confetti from "canvas-confetti";
 
 function setReduce(state, action) {
   switch (action) {
@@ -18,6 +19,11 @@ function Count() {
 
   const increment = () => {
     dispatch("increment");
+    // confetti({
+    //   particleCount: 50,
+    //   spread: 170,
+    //   origin: { y: 0.6 },
+    // });
   };
 
   const decrement = () => {
